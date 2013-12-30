@@ -20,7 +20,7 @@ tyler = {
 def average(lst):
     return float(sum(lst))/len(lst)
     
-def get_average(kid):
+def getAverage(kid):
     hw = average(kid['homework'])
     qu = average(kid['quizzes'])
     te = average(kid['tests'])
@@ -28,11 +28,11 @@ def get_average(kid):
     
     return avg
 
-def get_letter_grade(score):
+def getLetterGrade(score):
     if score >= 90: return 'A'
     elif 80 <= score < 90: return 'B'
     elif 70 <= score < 80: return 'C'
     elif 60 <= score < 70: return 'D'
     elif score < 60: return 'F'
     
-print get_letter_grade(get_average(lloyd))
+print getLetterGrade(getAverage(lloyd))
